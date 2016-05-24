@@ -1,0 +1,45 @@
+html {
+	font-family: arial, helvetica, sans-serif
+}
+html, body, #map {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.side {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	overflow-y: auto;
+}
+.side-btns {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+#map-btns {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+#plan-list {
+	width: 90%;
+	margin: auto;
+}
+
+#plan-name-input {
+	width: 90%;
+	margin-left: 10px;
+}
+#plan-name-btn {
+	margin-left: 10px;
+}
+#plan-name-txt {
+	width: 100%;
+	text-align: center;
+}
