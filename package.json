@@ -1,13 +1,14 @@
 {
-  "name": "app",
+  "name": "flightplan",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify main.js -o public/script.js"
+    "watch": "watchify main.js -o public/script.js",
+				"mini": "browserify main.js -o public/script.js | minify public/script.js -o public/script.js"
   },
-  "author": "",
+  "author": "anders",
   "license": "ISC",
   "dependencies": {
     "localforage": "^1.4.2"
