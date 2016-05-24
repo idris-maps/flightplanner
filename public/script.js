@@ -42,7 +42,7 @@ module.exports = function(map) {
 			}
 			planNameBtn.onclick = function() {
 				if(planNameInput.value) {
-					console.log('saving', planNameInput.value, map.points)
+					console.log('saving', JSON.stringify({name: planNameInput.value, points: map.points}))
 					planNameInput.value = ''
 					saveDraw.style.display = 'none'
 					plans.style.display = ''
@@ -97,8 +97,9 @@ module.exports = function(mapId) {
 },{}],3:[function(require,module,exports){
 var enableCtrl = require('./lib/ctrl')
 var Map = require('./lib/objects/Map')
-
+window.onload = function() {
 var mapView = new Map('map')
 enableCtrl(mapView)
+}
 
 },{"./lib/ctrl":1,"./lib/objects/Map":2}]},{},[3]);
