@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Flightplans</title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="leaflet.css" />
 		<link rel="stylesheet" href="style.css" />
@@ -15,14 +16,17 @@
 				<button id="draw">Draw</button>
 				<button id="hide-side">Hide menu</button>
 			</div>
+			<h3 id="plan-list-title">Flightplans</h3>
 			<div id="plan-list"></div>
 		</div>
 
 		<div id="save-drawing" class="side" style="display:none">
 			<p id="plan-name-txt">Give your flightplan a name</p>
 			<input id="plan-name-input" type="text" required>
+			<br/><br/>
 			<button id="plan-name-btn">OK</button>
 			<button id="plan-name-cancel">Cancel</button>
+			<p id="save-drawing-warning" style="display:none">You need to draw a line before saving</p>
 		</div>
 
 		<div id="map-btns">
